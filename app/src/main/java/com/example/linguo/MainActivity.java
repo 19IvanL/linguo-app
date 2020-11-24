@@ -22,11 +22,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //Starts on the Course Fragment
+        showSelectedFragment(new Course_Fragment());
 
         mBottomNavigation = (BottomNavigationView) findViewById(R.id.bottomNavigation);
 
         mBottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
+            //Fragment Selector
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
                 if (item.getItemId() == R.id.course_menu){

@@ -6,6 +6,38 @@
     tools:context=".fragments.Profile_Fragment">
 
     <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="188dp"
+        tools:layout_editor_absoluteY="152dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:drawableRight="@mipmap/thunder_foreground"
+                android:gravity="right"
+                android:text="Exp: 552"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:drawableRight="@mipmap/coin_foreground"
+                android:layout_height="34dp"
+                android:gravity="right"
+                android:text="Coins: 20"
+                android:textSize="24dp"/>
+        </LinearLayout>
+    </LinearLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

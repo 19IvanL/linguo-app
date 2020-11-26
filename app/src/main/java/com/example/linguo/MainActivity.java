@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //Starts in the Course Fragment
+        //Start in the Course Fragment
         showSelectedFragment(new Course_Fragment());
 
         mBottomNavigation = (BottomNavigationView) findViewById(R.id.bottomNavigation);

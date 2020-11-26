@@ -11,32 +11,39 @@
 
     <LinearLayout
         android:layout_width="155dp"
-        android:layout_height="115dp"
+        android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/txtCursos"
+            android:id="@+id/txtCourses"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Selector Cursos"
             android:textColor="@android:color/holo_blue_dark" />
 
         <Spinner
-            android:id="@+id/spinnerCursos"
+            android:id="@+id/spinnerCourses"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp" />
 
+        <Button
+            android:id="@+id/addCourse"
+            android:layout_width="118dp"
+            android:layout_height="40dp"
+            android:textSize="8dp"
+            android:text="Añadir Curso" />
+
         <TextView
-            android:id="@+id/txtComenzados"
+            android:id="@+id/txtStarted"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Cursos Comenzados"
             android:textColor="@android:color/holo_blue_dark" />
 
         <Spinner
-            android:id="@+id/spinnerComenzados"
+            android:id="@+id/spinnerStarted"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 

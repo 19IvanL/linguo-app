@@ -1,15 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.Course_Fragment">
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="COURSE FRAGMENT"
-        android:gravity="center"/>
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="155dp"
+        android:layout_height="115dp"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtCursos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selector Cursos"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <Spinner
+            android:id="@+id/spinnerCursos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/txtComenzados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cursos Comenzados"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <Spinner
+            android:id="@+id/spinnerComenzados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

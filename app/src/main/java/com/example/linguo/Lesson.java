@@ -4,5 +4,4 @@ package com.example.linguo;
 
 public class Lesson {
 
-
 }

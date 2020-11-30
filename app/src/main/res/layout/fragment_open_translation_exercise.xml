@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:tag="exercise_fragment_1"
     tools:context=".fragments.OpenTranslationExerciseFragment">
 
     <TextView
@@ -23,6 +24,5 @@
 
         android:lines="3"
         android:minLines="3" />
-
 
 </LinearLayout>

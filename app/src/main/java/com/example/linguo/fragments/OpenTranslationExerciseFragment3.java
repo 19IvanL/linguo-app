@@ -14,7 +14,7 @@ import com.example.linguo.R;
  * Use the {@link OpenTranslationExerciseFragment3#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class OpenTranslationExerciseFragment3 extends Fragment {ShopFragment
+public class OpenTranslationExerciseFragment3 extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

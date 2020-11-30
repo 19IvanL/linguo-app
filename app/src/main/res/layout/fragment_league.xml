@@ -4,14 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000"
-    tools:context=".fragments.Shop_Fragment">
+    tools:context=".fragments.LeagueFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textColor="#FFF"
-        android:text="SHOP FRAGMENT"
+        android:textColor="#FFFF"
+        android:text="LEAGUE FRAGMENT"
         android:gravity="center"/>
 
 </FrameLayout>

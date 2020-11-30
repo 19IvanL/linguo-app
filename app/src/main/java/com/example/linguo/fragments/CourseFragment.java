@@ -18,21 +18,19 @@ import com.example.linguo.R;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Course_Fragment extends Fragment{
+public class CourseFragment extends Fragment{
 
     Spinner spinnerCourses, spinnerStarted;
     Button btnAddCourse, btnCategories;
 
-    ArrayList<String> coursesAvailable = new ArrayList<>(Arrays.asList("Ingles", "Frances", "Italiano", "Portugues", "Aleman", "Ruso", "Catalan", "Espeanto", "Guarani", "Sueco"));
+    ArrayList<String> coursesAvailable = new ArrayList<>(Arrays.asList("Ingles", "Frances", "Italiano", "Portugues", "Aleman", "Ruso", "Catalan", "Esperanto", "Guarani", "Sueco"));
     ArrayList<String> coursesStarted = new ArrayList<>();
 
-    public Course_Fragment() {
-    }
-
+    public CourseFragment() {}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_course_, container, false);
+        View v = inflater.inflate(R.layout.fragment_course, container, false);
         //Creating Spinner and setting the AdapterView
         spinnerCourses = (Spinner) v.findViewById(R.id.spinnerCourses);
         spinnerStarted = (Spinner) v.findViewById(R.id.spinnerStarted);
@@ -48,7 +46,7 @@ public class Course_Fragment extends Fragment{
             @Override
             public void onClick(View v) {
                 if (spinnerStarted.getSelectedItem() != null && spinnerStarted.getSelectedItem().toString().equals("Ingles")){
-                    showSelectedFragment(new Categories_Fragment());
+                    showSelectedFragment(new CategoriesFragment());
                 }
                 else{
                     Toast.makeText(getActivity().getBaseContext(),"El curso seleccionado aun no tiene categorias", Toast.LENGTH_SHORT).show();

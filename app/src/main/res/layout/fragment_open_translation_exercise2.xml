@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:tag="exercise_fragment_2"
+    tools:context=".fragments.OpenTranslationExerciseFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="Yellow is my favorite color." />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Introduce la traduccion aqui"
+        android:inputType="textLongMessage"
+
+        android:lines="3"
+        android:minLines="3" />
+
+
+</LinearLayout>

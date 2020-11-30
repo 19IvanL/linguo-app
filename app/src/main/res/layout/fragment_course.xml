@@ -10,35 +10,49 @@
 
 
     <LinearLayout
-        android:layout_width="155dp"
-        android:layout_height="115dp"
+        android:layout_width="178dp"
+        android:layout_height="186dp"
         android:layout_margin="16dp"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/txtCursos"
-            android:layout_width="wrap_content"
+            android:id="@+id/txtCourses"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Selector Cursos"
             android:textColor="@android:color/holo_blue_dark" />
 
         <Spinner
-            android:id="@+id/spinnerCursos"
-            android:layout_width="wrap_content"
+            android:id="@+id/spinnerCourses"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp" />
 
+        <Button
+            android:id="@+id/addCourse"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Añadir Curso"
+            android:textSize="8dp" />
+
         <TextView
-            android:id="@+id/txtComenzados"
+            android:id="@+id/txtStarted"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Cursos Comenzados"
             android:textColor="@android:color/holo_blue_dark" />
 
         <Spinner
-            android:id="@+id/spinnerComenzados"
-            android:layout_width="wrap_content"
+            android:id="@+id/spinnerStarted"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnCategories"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Abrir categorias"
+            android:textSize="8dp" />
 
 
     </LinearLayout>

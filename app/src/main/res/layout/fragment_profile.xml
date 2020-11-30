@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.Profile_Fragment">
+    android:background="#000"
+    tools:context=".fragments.ProfileFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -26,6 +27,7 @@
                 android:drawableRight="@mipmap/thunder_foreground"
                 android:gravity="right"
                 android:text="Exp: 552"
+                android:textColor="#FFF"
                 android:textSize="24dp" />
 
             <TextView
@@ -34,6 +36,7 @@
                 android:drawableRight="@mipmap/coin_foreground"
                 android:layout_height="34dp"
                 android:gravity="right"
+                android:textColor="#FFF"
                 android:text="Coins: 20"
                 android:textSize="24dp"/>
         </LinearLayout>
@@ -41,6 +44,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:textColor="#FFF"
         android:text="PROFILE FRAGMENT"
         android:gravity="center"/>
 

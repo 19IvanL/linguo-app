@@ -3,6 +3,7 @@ package com.example.linguo.fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,7 +22,7 @@ import java.util.Arrays;
 public class Course_Fragment extends Fragment{
 
     Spinner spinnerCourses, spinnerStarted;
-    Button btnAddCourse;
+    Button btnAddCourse, btnCategories;
 
     ArrayList<String> coursesAvailable = new ArrayList<>(Arrays.asList("Ingles", "Frances", "Italiano", "Portugues", "Aleman", "Ruso", "Catalan", "Espeanto", "Guarani", "Sueco"));
     ArrayList<String> coursesStarted = new ArrayList<>();
@@ -41,7 +42,18 @@ public class Course_Fragment extends Fragment{
             @Override
             public void onClick(View v) {
                 addCourse();
-                //Toast.makeText(getActivity().getBaseContext(),"Hola", Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnCategories = (Button) v.findViewById(R.id.buttonCategories);
+        btnCategories.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (spinnerStarted.getSelectedItem() != null && spinnerStarted.getSelectedItem().toString().equals("Ingles")){
+                    showSelectedFragment(new Categories_Fragment());
+                }
+                else{
+                    Toast.makeText(getActivity().getBaseContext(),"El curso seleccionado aun no tiene categorias", Toast.LENGTH_SHORT).show();
+                }
             }
         });
         setSpinnerCourses();
@@ -78,6 +90,12 @@ public class Course_Fragment extends Fragment{
             Toast.makeText(getActivity().getBaseContext(), "No has seleccionado ningún curso para añadir", Toast.LENGTH_LONG).show();
         }
 
+    }
+
+    private void showSelectedFragment(Fragment fragment){
+        getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment)
+                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                .commit();
     }
 
 

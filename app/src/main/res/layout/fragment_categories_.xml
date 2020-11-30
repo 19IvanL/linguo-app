@@ -3,8 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragments.Categories">
+    tools:context=".fragments.Categories_Fragment">
 
     <ScrollView
         android:layout_width="fill_parent"
@@ -38,6 +40,7 @@
                         android:id="@+id/txtTitle1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="#FFFF"
                         android:text="Intro"
                         android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
@@ -46,6 +49,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        android:textColor="#FFFF"
                         android:text="1/5" />
                 </LinearLayout>
 
@@ -84,6 +88,7 @@
                         android:id="@+id/txtTitle2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="#FFFF"
                         android:text="Intro"
                         android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
@@ -92,6 +97,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        android:textColor="#FFFF"
                         android:text="1/5" />
                 </LinearLayout>
 
@@ -130,6 +136,7 @@
                         android:id="@+id/txtTitle3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="#FFFF"
                         android:text="Intro"
                         android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
@@ -138,6 +145,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        android:textColor="#FFFF"
                         android:text="1/5" />
                 </LinearLayout>
 

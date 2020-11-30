@@ -13,7 +13,6 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.example.linguo.MainActivity;
 import com.example.linguo.R;
 
 import java.util.ArrayList;
@@ -44,7 +43,7 @@ public class Course_Fragment extends Fragment{
                 addCourse();
             }
         });
-        btnCategories = (Button) v.findViewById(R.id.buttonCategories);
+        btnCategories = (Button) v.findViewById(R.id.btnCategories);
         btnCategories.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

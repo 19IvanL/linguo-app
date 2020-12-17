@@ -20,7 +20,7 @@
 
     <fragment
         android:id="@+id/exerciseFragment"
-        android:name="com.example.linguo.fragments.BlankFragment"
+        android:name="ams2.linguo.app.fragments.BlankFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"

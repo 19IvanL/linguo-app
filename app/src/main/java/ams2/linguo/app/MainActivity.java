@@ -25,14 +25,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // TODO Find better method
-        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-        StrictMode.setThreadPolicy(policy);
-
         // TODO Test RMI Client
-        System.out.println("Empezando cosa");
-        LipeRMIClient lrc = new LipeRMIClient();
         System.out.println("Alla vamos...");
+        LipeRMIClient lpc = new LipeRMIClient();
+        System.out.println(lpc.execute());
         System.out.println("Cosa terminada");
 
         // Starts on the Course Fragment

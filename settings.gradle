@@ -1,2 +1,5 @@
 include ':app'
 rootProject.name = "linguo"
+
+include ':app', ":linguo-lib"
+project(':linguo-lib').projectDir = new File(settingsDir, './linguo-lib')
